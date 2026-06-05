@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Received — Specta</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo-icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--bg:#0D1117;--indigo:#6366F1;--cyan:#06B6D4;--muted:#94A3B8;--dim:#475569;--font:'Inter',-apple-system,sans-serif}
+    body{background:var(--bg);color:#F8FAFC;font-family:var(--font);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;overflow:hidden}
+    .aurora{position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse 60% 50% at 50% 20%,rgba(99,102,241,.15) 0%,transparent 70%),radial-gradient(ellipse 40% 40% at 70% 70%,rgba(6,182,212,.08) 0%,transparent 60%)}
+    .card{position:relative;z-index:1;max-width:520px}
+    .check{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--indigo),var(--cyan));display:flex;align-items:center;justify-content:center;margin:0 auto 32px;font-size:36px;animation:pop .5s cubic-bezier(.175,.885,.32,1.275) both}
+    @keyframes pop{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
+    h1{font-size:clamp(1.8rem,5vw,2.6rem);font-weight:900;letter-spacing:-1px;margin-bottom:16px;background:linear-gradient(135deg,var(--indigo),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    p{color:var(--muted);font-size:1.05rem;line-height:1.7;margin-bottom:32px}
+    a{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--indigo),var(--cyan));color:white;font-size:14px;font-weight:600;padding:12px 24px;border-radius:8px;text-decoration:none;transition:opacity .2s}
+    a:hover{opacity:.9}
+  </style>
+</head>
+<body>
+  <div class="aurora"></div>
+  <div class="card">
+    <div class="check">✅</div>
+    <h1>Request received!</h1>
+    <p>Thank you for reaching out. We'll be in touch within 1 business day to schedule your Specta demo. Check your inbox for a confirmation.</p>
+    <a href="/">← Back to Specta</a>
+  </div>
+</body>
+</html>
