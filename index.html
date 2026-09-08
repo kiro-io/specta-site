@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Specta — Observe Every AI Call. Optimize Every Dollar.</title>
-  <meta name="description" content="Specta is the first AI observability platform built for engineering teams — detecting waste, surfacing developer flow states, forecasting spend, and coaching developers in real time via 10 specialized agents.">
+  <meta name="description" content="Specta is the first AI observability platform built for engineering teams — detecting waste, surfacing developer flow states, forecasting spend, and coaching developers in real time via 9 specialized agents.">
   <meta property="og:title" content="Specta — Observe Every AI Call. Optimize Every Dollar.">
-  <meta property="og:description" content="The first AI observability platform with 10 specialized agents. See costs, anti-patterns, flow states, and ROI in real time.">
+  <meta property="og:description" content="The first AI observability platform with 9 specialized agents. See costs, anti-patterns, flow states, and ROI in real time.">
   <meta property="og:image" content="assets/logo-icon.svg">
   <link rel="icon" type="image/svg+xml" href="assets/logo-icon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -171,7 +171,7 @@
     .app-screen-caption{text-align:center;margin-top:20px;font-size:14px;color:var(--muted)}
     .app-screen-caption strong{color:var(--text)}
 
-    /* ─── 10 AGENTS ─── */
+    /* ─── 9 AGENTS ─── */
     #agents{background:linear-gradient(180deg,var(--bg2) 0%,var(--bg) 100%)}
     .agents-intro{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-bottom:64px}
     .agents-text h2{font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:900;letter-spacing:-1px;margin-bottom:16px}
@@ -395,7 +395,7 @@
     <div class="nav-links" id="nav-links">
       <a href="#problem">Problem</a>
       <a href="#app">Product</a>
-      <a href="#agents">10 Agents</a>
+      <a href="#agents">9 Agents</a>
       <a href="#roi">ROI</a>
       <a href="#pricing">Pricing</a>
       <a href="#integration">Docs</a>
@@ -412,12 +412,12 @@
   <div class="hero-grid"></div>
   <div class="container">
     <div class="hero-eyebrow">
-      <div class="hero-first-badge">&#x2605; World's First AI Observability Platform with 10 Specialized Agents</div>
+      <div class="hero-first-badge">&#x2605; World's First AI Observability Platform with 9 Specialized Agents</div>
     </div>
     <div class="hero-eyebrow" style="margin-top:-16px">
       <span class="badge badge-indigo">&#x25CF; AI Observability</span>
       <div class="hero-sep"></div>
-      <span class="badge badge-cyan">10 Specialized Agents</span>
+      <span class="badge badge-cyan">9 Specialized Agents</span>
       <div class="hero-sep"></div>
       <span class="badge badge-green">Zero External Dependencies</span>
     </div>
@@ -585,15 +585,15 @@
   </div>
 </section>
 
-<!-- ═══ 10 AGENTS ═══ -->
+<!-- ═══ 9 AGENTS ═══ -->
 <section id="agents">
   <div class="container">
     <div class="agents-intro">
       <div class="agents-text reveal-left">
-        <div class="section-label">10-Agent Architecture</div>
+        <div class="section-label">9-Agent Architecture</div>
         <h2>Not dashboards.<br><span class="grad">Reasoning agents.</span></h2>
         <div class="orchestrator-badge">&#x1F9E0; Orchestrator routes every query to the right specialist</div>
-        <p>Specta runs 10 specialized AI agents continuously. Each owns a domain: AI observability, MCP tracing, cost optimization, alerting, developer coaching, and more. When you query Specta, the orchestrator picks the best combination of agents and synthesizes a response.</p>
+        <p>Specta runs 9 specialized AI agents continuously. Each owns a domain: AI observability, MCP tracing, cost optimization, alerting, developer coaching, and more. When you query Specta, the orchestrator picks the best combination of agents and synthesizes a response.</p>
         <p>This is the difference between a dashboard and a system that <em>reasons</em> about your data.</p>
         <a href="#demo" class="btn btn-primary btn-lg" style="margin-top:8px">See Agents Live &rarr;</a>
       </div>
@@ -691,7 +691,7 @@
     <div class="steps">
       <div class="step reveal"><div class="step-number">1</div><h3>Ingest Spans</h3><p>Your tools send OTLP/HTTP spans to Specta on port 4318. Claude Code, MCP servers, and custom apps all speak OTLP natively.</p><span class="step-detail">OTLP/HTTP &middot; port 4318</span></div>
       <div class="step reveal"><div class="step-number">2</div><h3>Store in DuckDB</h3><p>Every span is stored in embedded DuckDB with AI-specific schema &mdash; tokens, cost, model, user, session, tool calls. No external database.</p><span class="step-detail">embedded DuckDB &middot; Parquet export</span></div>
-      <div class="step reveal"><div class="step-number">3</div><h3>Agents Analyze</h3><p>10 specialized agents run continuously &mdash; detecting anti-patterns, correlating anomalies, building forecasts, generating per-developer coaching insights.</p><span class="step-detail">10 agents &middot; Claude Sonnet 4.6</span></div>
+      <div class="step reveal"><div class="step-number">3</div><h3>Agents Analyze</h3><p>9 specialized agents run continuously &mdash; detecting anti-patterns, correlating anomalies, building forecasts, generating per-developer coaching insights.</p><span class="step-detail">9 agents &middot; Claude Sonnet 4.6</span></div>
       <div class="step reveal"><div class="step-number">4</div><h3>Alert &amp; Coach</h3><p>Alerts fire on budget overruns, error spikes, and anti-patterns. Coaching surfaces in dashboards. Reports are live &mdash; no batch jobs, no lag.</p><span class="step-detail">real-time &middot; no ETL pipeline</span></div>
     </div>
   </div>
@@ -841,7 +841,7 @@
           <tr><td>Futile / wasteful call detection</td><td class="specta yes">&#x2705; Automatic, with ROI impact</td><td class="no">&#x274C;</td><td>Partial</td><td class="no">&#x274C;</td></tr>
           <tr><td>Zero external dependencies</td><td class="specta yes">&#x2705; Embedded DuckDB</td><td class="no">&#x274C; SaaS / heavy agent</td><td class="no">&#x274C; SaaS only</td><td class="yes">&#x2705;</td></tr>
           <tr><td>In-session developer coaching</td><td class="specta yes">&#x2705; Automated, per-developer</td><td class="no">&#x274C;</td><td class="no">&#x274C;</td><td class="no">&#x274C;</td></tr>
-          <tr><td>10 specialized AI reasoning agents</td><td class="specta yes">&#x2705; Always running</td><td class="no">&#x274C;</td><td class="no">&#x274C;</td><td class="no">&#x274C;</td></tr>
+          <tr><td>9 specialized AI reasoning agents</td><td class="specta yes">&#x2705; Always running</td><td class="no">&#x274C;</td><td class="no">&#x274C;</td><td class="no">&#x274C;</td></tr>
           <tr><td>OTLP/HTTP native ingest</td><td class="specta yes">&#x2705; Port 4318, zero config</td><td class="yes">&#x2705;</td><td class="no">SDK only</td><td class="no">Custom</td></tr>
         </tbody>
       </table>
@@ -913,7 +913,7 @@
           <div class="int-step-num">3</div>
           <div class="int-step-body">
             <h4>Agents activate automatically</h4>
-            <p>Within minutes of first spans arriving, all 10 agents start analyzing. Anti-patterns surface, flow states appear, cost forecasts calibrate to your team's actual usage.</p>
+            <p>Within minutes of first spans arriving, all 9 agents start analyzing. Anti-patterns surface, flow states appear, cost forecasts calibrate to your team's actual usage.</p>
           </div>
         </div>
         <div class="int-step">
@@ -934,7 +934,7 @@
 <!-- ═══ STATS ═══ -->
 <section id="stats">
   <div class="stats-grid">
-    <div class="stat reveal"><div class="stat-value grad" data-target="10" data-suffix="">0</div><div class="stat-label">Specialized AI agents</div><div class="stat-sub">always running</div></div>
+    <div class="stat reveal"><div class="stat-value grad" data-target="9" data-suffix="">0</div><div class="stat-label">Specialized AI agents</div><div class="stat-sub">always running</div></div>
     <div class="stat reveal"><div class="stat-value grad" data-target="6" data-suffix="">0</div><div class="stat-label">Anti-patterns detected</div><div class="stat-sub">auto-coached per developer</div></div>
     <div class="stat reveal"><div class="stat-value grad" data-target="30" data-suffix="-day">0</div><div class="stat-label">Spend forecasts</div><div class="stat-sub">&#xB13% accuracy</div></div>
     <div class="stat reveal"><div class="stat-value grad" data-prefix="~" data-target="15" data-suffix="min">0</div><div class="stat-label">Time to first insight</div><div class="stat-sub">from jar launch</div></div>
@@ -948,16 +948,16 @@
     <div class="section-header reveal">
       <div class="section-label">Pricing</div>
       <h2>Start free.<br><span class="grad">Scale when it matters.</span></h2>
-      <p>Every tier includes the full 10-agent architecture. No crippled free tier &mdash; see the value before you commit.</p>
+      <p>Every tier includes the full 9-agent architecture. No crippled free tier &mdash; see the value before you commit.</p>
     </div>
     <div class="pricing-grid">
       <div class="pricing-card reveal">
         <div class="pricing-tier">Community</div>
         <div class="pricing-price"><span class="price-amount">$0</span><span class="price-period">/mo</span></div>
         <div class="price-note">Free forever &middot; self-hosted</div>
-        <div class="pricing-desc">Full observability for solo developers and small teams. All 10 agents included. No card required.</div>
+        <div class="pricing-desc">Full observability for solo developers and small teams. All 9 agents included. No card required.</div>
         <div class="pricing-features">
-          <div class="pricing-feature"><span class="check">&#x2713;</span>All 10 AI agents</div>
+          <div class="pricing-feature"><span class="check">&#x2713;</span>All 9 AI agents</div>
           <div class="pricing-feature"><span class="check">&#x2713;</span>OTLP/HTTP ingest</div>
           <div class="pricing-feature"><span class="check">&#x2713;</span>Anti-pattern detection</div>
           <div class="pricing-feature"><span class="check">&#x2713;</span>7-day data retention</div>
@@ -1099,14 +1099,14 @@
           <img src="assets/logo-icon.svg" alt="Specta" style="width:32px;height:32px">
           <span style="font-size:17px;font-weight:900;letter-spacing:-.5px">SPECTA</span>
         </a>
-        <p>The first AI observability platform with 10 specialized agents. Observe every call. Optimize every dollar. Protect every flow state.</p>
+        <p>The first AI observability platform with 9 specialized agents. Observe every call. Optimize every dollar. Protect every flow state.</p>
       </div>
       <div class="footer-links">
         <div class="footer-col">
           <h4>Product</h4>
           <a href="#problem">The Problem</a>
           <a href="#app">Product Tour</a>
-          <a href="#agents">10-Agent Architecture</a>
+          <a href="#agents">9-Agent Architecture</a>
           <a href="#compare">vs Alternatives</a>
           <a href="#pricing">Pricing</a>
         </div>
